@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Sansita+Swashed:wght@300&display=swap");
+@import url("slideshow.css");
+@import url("card.css");
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+header{
+    background: #000000;
+    color: #ffffff;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a{
+    color: #ffffff;
+    transition: 0.3s color;
+    margin: 6px;
+}
+
+header a:hover{
+    color: #f77f00;
+}
+
+nav{
+    background-color: #f77f00;
+    color: #ffffff;
+    padding: 0 5% 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+}
+
+nav a{
+    color: #ffffff;
+    padding-left: 12px;
+}
+
+nav a:hover{
+    color: #000000;
+}
+
+nav h1{
+    font-family: 'Kaushan Script';
+    font-size: 34px;
+    margin: 8px;
+}
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 5% 8px 5%;
+}
+
+footer h2, h3, h4{
+    color: #ffffff;
+}
+
+footer a{
+    color: #ffffff;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    margin: 2px 5% 2px 5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+#dep-nav{
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 5% 0 5%;
+}
+
+#dep-nav a{
+    color: black;
+    padding: 12px;
+}
+
+#dep-nav a:hover{
+    background-color: #f77f00;
+    color: #ffffff;
+}
+
+.wpp-banner{
+    background-color: #25D366; 
+    font-size: x-large; 
+    justify-content: space-around;
+    text-align: center;
+    padding: 8px;
+}
+
+.wpp-banner a{
+    color: #ffffff;
+    transition: .2s color;
+}
+
+.wpp-banner a:hover{
+    color: #000000;
+}
+
+.social-footer{
+    display: flex;
+    font-size: 32px; 
+    justify-content: space-around;
+}
+
+.social-footer a:hover{
+    color: #f77f00;
+}
+
+#nav-menu{
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    header div{
+        width: 100%;
+        text-align: center;
+    }
+
+    header span{
+        display: none;
+    }
+
+    nav{
+        padding: 0 8px 0 8px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    #dep-nav{
+        flex-direction: column;
+        display: none;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    #nav-links{
+        display: none;
+    }
+
+    #nav-menu{
+        display: block;
+    }    
+}
